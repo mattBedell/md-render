@@ -1,5 +1,5 @@
 # mdrender
-A quick and dirty CLI markdown render utility using [Glamour renderer](https://github.com/charmbracelet/glamour)
+A quick and dirty CLI markdown render utility using [Glamour renderer][1]
 
 ### Features
 
@@ -9,9 +9,10 @@ A quick and dirty CLI markdown render utility using [Glamour renderer](https://g
 - No error handling
 - First Golang I've ever written
 
-Change the theme with env variable:
+### Install
+
 ```sh
-GLAMOUR_STYLE=light
+brew install mattbedell/formulae/mdrender
 ```
 
 ### Build
@@ -20,11 +21,24 @@ GLAMOUR_STYLE=light
 go build github.com/mattBedell/md_render
 ```
 
+### Usage
+
+```sh
+mdrender path/to/file.md
+```
+
+### Configuration
+
+Change the theme with env variable:
+```sh
+GLAMOUR_STYLE=light
+```
+
 ### See also
+- [mdcat][4] - A CLI markdown renderer
 - [Glow][3]
 - [Github CLI][2]
 - [Glamour renderer][1]
-- [mdcat][4] - A CLI renderer written in Rust
 
 [1]: https://github.com/charmbracelet/glamour
 [2]: https://github.com/cli/cli
