@@ -18,7 +18,7 @@ brew install mattbedell/formulae/mdrender
 ### Build
 
 ```sh
-go build github.com/mattBedell/md_render
+go build github.com/mattBedell/mdrender
 ```
 
 ### Usage
